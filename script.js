@@ -25,15 +25,17 @@
       showSlide(currentSlide);                  
    }                  
      showSlide(currentSlide);                  
-     setInterval(nextSlide,3000);                  
-  function toggleForm(id) {                  
-      const form = document.getElementById(id);                  
-       if (form.style.display === 'none' || form.style.display === "") {                  
-         form.style.display = "block";                  
-       } else {                  
-          form.style.display = 'none';                  
-   }                  
-}                  
+     setInterval(nextSlide,3000);                
+     function toggleForm(id) {
+  const form = document.getElementById(id);
+  const currentDisplay = window.getComputedStyle(form).display;
+
+  if (currentDisplay === 'none') {
+    form.style.display = 'block';
+  } else {
+    form.style.display = 'none';
+  }
+     }
     const registerForm = document.getElementById('registerForm');                  
  registerForm.addEventListener('submit', async function(event) {                  
        event.preventDefault();                  
