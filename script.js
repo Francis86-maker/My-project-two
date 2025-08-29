@@ -1,4 +1,4 @@
-
+alert("JS is running!");
 <script>                  
   let letters =                   
   document.querySelectorAll("span");                  
