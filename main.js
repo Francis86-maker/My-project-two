@@ -26,7 +26,7 @@
    }                  
      showSlide(currentSlide);                  
      setInterval(nextSlide,3000);                  
-  function toggleForm(id) {{                  
+  function toggleForm(id) {                  
       const form = document.getElementById(id);                  
        if (form.style.display === 'none' || form.style.display === "") {                  
          form.style.display = "block";                  
