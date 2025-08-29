@@ -4,6 +4,7 @@
    <meta name="viewport"          
    content="width=device-width, initial-scale=1.0">          
    <link rel="stylesheet" href="style.css">
+   <script src="main.js" defer></script>
    <title>Yasmine</title>          
  </head>          
  <body>          
@@ -71,7 +72,7 @@
    <button class="show-form-btn" onclick="toggleForm('registerForm')">Register</button>          
     <form id="registerForm" method="POST"          
     action="http://localhost:4000/register"          
-    enctype="multipart/form-data">          
+    enctype="multipart/form-data" style="display: none;">          
      <label for="registerUsername">Username:</label>          
      <input type="text" id="registerUsername"          
      name="username" placeholder="Enter your username"/><br>          
@@ -86,7 +87,7 @@
      <button class="show-form-btn" onclick="toggleForm('loginForm')">Login</button>          
      <form id="loginForm" method="POST"          
       action="http://localhost:4000/login"          
-      enctype="multipart/form-data">          
+      enctype="multipart/form-data"style="display:none;">          
        <label for="loginEmail">Email:</label>          
        <input type="email" id="loginEmail"          
         name="email" placeholder="Enter your email for logging in" required/>          
@@ -98,7 +99,7 @@
       <button class="show-form-btn" onclick="toggleForm('adminLoginForm')">Admin login</button>          
       <form id="adminLoginForm" method="POST"          
       action="http://localhost:4000/admin/login"          
-       enctype="multipart/form-data">          
+       enctype="multipart/form-data" style="display:none;">          
        <label for="adminEmail">Email:</label>          
        <input type="email" id="adminEmail"          
        name="email" placeholder="Enter your admin email" required/><br>          
@@ -109,7 +110,7 @@
      </form><br>          
      <form id="productForm" method="POST"          
      action="http://localhost:4000/product"          
-     enctype="multipart/form-data">          
+     enctype="multipart/form-data"style="display:none;">          
      <label for="productName">ProductName:</label>          
      <input type="text" id="productName"          
       name="name" required/>          
@@ -133,6 +134,5 @@
     <label for="female">female:</label>          
      <input type="radio" id="female"          
      class="gender" value="female"/>
-    <script src="main.js"></script>
   </body>          
 </html>          
